@@ -19,5 +19,5 @@ power$DateTime <- strptime(paste(power$Date, power$Time),"%Y-%m-%d %H:%M:%S")
 # Open plot2.png to write the plot information
 
 png("plot2.png", width = 480, height = 480, units = "px", bg = "white")
-plot(power$DateTime, power$Global_active_power, type="l", ylab="Global Active Power(kilowatts)")
+plot(power$DateTime, power$Global_active_power, type="l", xlab = "", ylab="Global Active Power(kilowatts)")
 dev.off()
